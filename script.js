@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // GANTI DENGAN ACCESS KEY YANG DIKIRIMKAN KE EMAIL ANDA DARI WEB3FORMS.COM
       const ACCESS_KEY = "0e45951d-200b-4337-a768-bd9510752c2e";
 
-      if (ACCESS_KEY === "0e45951d-200b-4337-a768-bd9510752c2e") {
+      if (!ACCESS_KEY || ACCESS_KEY === "" || ACCESS_KEY.includes("MASUKKAN")) {
         showToast('Harap masukkan Web3Forms Access Key Anda di script.js terlebih dahulu.', false);
         return;
       }
