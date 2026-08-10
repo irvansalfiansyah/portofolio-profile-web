@@ -126,13 +126,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Simple frontend validation validation
       if (!name || !email || !message) {
-        showToast('Harap lengkapi semua data sebelum mengirim.', false);
+        showToast('Please fill in all fields before sending.', false);
         return;
       }
 
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(email)) {
-        showToast('Harap masukkan alamat email yang valid.', false);
+        showToast('Please enter a valid email address.', false);
         return;
       }
 
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const ACCESS_KEY = "0e45951d-200b-4337-a768-bd9510752c2e";
 
       if (!ACCESS_KEY || ACCESS_KEY === "" || ACCESS_KEY.includes("MASUKKAN")) {
-        showToast('Harap masukkan Web3Forms Access Key Anda di script.js terlebih dahulu.', false);
+        showToast('Please enter your Web3Forms Access Key in script.js first.', false);
         return;
       }
 
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitButton.disabled = true;
         submitButton.style.opacity = '0.7';
       }
-      showToast('Sedang mengirim pesan...');
+      showToast('Sending message...');
 
       // Prepare Form Data payload
       const formData = new FormData();
@@ -182,14 +182,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             contactForm.reset();
-            showToast('Pesan berhasil dikirim! Terima kasih.');
+            showToast('Message sent successfully! Thank you.');
           } else {
-            showToast('Gagal mengirim pesan: ' + (data.message || 'Error'), false);
+            showToast('Failed to send message: ' + (data.message || 'Error'), false);
           }
         })
         .catch(error => {
           console.error('Error submitting form:', error);
-          showToast('Terjadi kesalahan koneksi atau jaringan.', false);
+          showToast('A network or connection error occurred.', false);
         })
         .finally(() => {
           if (submitButton) {

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project details of Sayur Sehat E-Commerce by Muhamad Irvan Alfiyansah.">
+  <title>Sayur Sehat E-Commerce | Irvan Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <header>
+    <nav class="nav-container">
+      <a href="index.html#projects" class="logo" aria-label="Irvan Portfolio Home">
+        <span>&lt;</span>Irvan<span>/&gt;</span>
+      </a>
+      <a href="index.html#projects" class="btn-back" style="margin-bottom: 0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" style="transform: rotate(180deg);">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+        Back to Home
+      </a>
+    </nav>
+  </header>
+
+  <main class="container max-w-5xl detail-container">
+    <a href="index.html#projects" class="btn-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" style="transform: rotate(180deg);">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+      </svg>
+      Back to Projects
+    </a>
+
+    <div class="project-detail-header">
+      <span class="status-badge" style="background-color: rgba(74, 222, 128, 0.1); border-color: rgba(74, 222, 128, 0.2); color: #4ade80;">
+        Software Quality Assurance
+      </span>
+      <h1 class="hero-title" style="margin-top: 0.75rem;">Sayur Sehat E-Commerce</h1>
+      <div class="project-detail-meta">
+        <span>Role: <strong>Software Quality Assurance</strong></span>
+        <span>Year: <strong>2026</strong></span>
+      </div>
+    </div>
+
+    <!-- Interactive Image Gallery -->
+    <div class="gallery-container">
+      <div class="main-image-viewport" id="main-viewport">
+        <img src="asset/SQA1.png" alt="Sayur Sehat E-Commerce Dashboard Preview" class="active" id="main-img">
+      </div>
+      <div class="gallery-thumbnails" id="gallery-thumbs">
+        <button class="thumb-btn active" data-src="asset/SQA1.png" aria-label="View Image 1">
+          <img src="asset/SQA1.png" alt="Dashboard Overview">
+        </button>
+        <button class="thumb-btn" data-src="asset/SQA2.png" aria-label="View Image 2">
+          <img src="asset/SQA2.png" alt="Testing Log and Bug Tracking">
+        </button>
+        <button class="thumb-btn" data-src="asset/SQA3.png" aria-label="View Image 3">
+          <img src="asset/SQA3.png" alt="Software Quality Assurance Spec Sheet">
+        </button>
+      </div>
+    </div>
+
+    <div class="project-detail-grid">
+      <div class="detail-main-content">
+        <h2 class="detail-section-title">About Project</h2>
+        <p class="body-text">
+          Sayur Sehat E-Commerce is an innovative digital e-commerce platform focusing on the distribution of organic vegetables and fresh produce directly to consumers. The project is built using a high-speed modern architecture with a React (Vite) frontend and a reliable, high-performance backend using Go (Golang) and PostgreSQL.
+        </p>
+        <p class="body-text">
+          In this project, I acted as the <strong>Software Quality Assurance (SQA) Engineer</strong>, designing and implementing a comprehensive testing strategy to ensure the system's quality and reliability prior to deployment.
+        </p>
+
+        <h3 class="detail-section-title" style="margin-top: 2rem;">Testing Scope & SQA Documentation</h3>
+        <ul class="detail-features-list">
+          <li>
+            <strong>Combined Testing Methodology:</strong> Utilized Black Box testing to validate visual functionality, White Box testing to analyze Go backend logical code paths, and Grey Box testing to verify API integration against the PostgreSQL database schema.
+          </li>
+          <li>
+            <strong>Comprehensive SRS Documentation:</strong> Compiled Software Requirements Specification (SRS) documentation detailing all use cases, functional descriptions, data relationship diagrams, and system constraints.
+          </li>
+          <li>
+            <strong>Test Case Specifications:</strong> Prepared detailed test scenarios covering JWT authentication modules, shopping carts, checkout payment flows, and concurrent stock level validations.
+          </li>
+          <li>
+            <strong>Bug Tracking & Defect Reporting:</strong> Used a structured defect tracker to document, prioritize (severity level), track reproduction steps, and validate fix patches submitted by the development team.
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="card spec-card">
+          <h3 style="font-size: 1.15rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+            Technologies & Environment
+          </h3>
+          <div class="skill-list" style="margin-bottom: 1.5rem;">
+            <span class="skill-tag">Software Testing</span>
+            <span class="skill-tag">Black Box</span>
+            <span class="skill-tag">White Box</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Go (Golang)</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SRS Documentation</span>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <a href="https://github.com/Nuryanfa/e-commerse-sqa/tree/main/dokumentasi" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; border-radius: 8px; padding: 0.6rem 1rem;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-text">&copy; 2026 Irvan. All rights reserved.</div>
+      <ul class="footer-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      /* --- Gallery Interactivity --- */
+      const mainImg = document.getElementById('main-img');
+      const thumbButtons = document.querySelectorAll('.thumb-btn');
+
+      thumbButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all buttons and set on clicked
+          thumbButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          // Change main image with smooth transition
+          const src = btn.getAttribute('data-src');
+          mainImg.style.opacity = '0';
+          setTimeout(() => {
+            mainImg.setAttribute('src', src);
+            mainImg.style.opacity = '1';
+          }, 200);
+        });
+      });
+
+      /* --- Scroll Progress Bar --- */
+      const scrollProgress = document.getElementById('scroll-progress');
+      const updateScrollProgress = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        scrollProgress.style.width = `${scrolled}%`;
+      };
+      window.addEventListener('scroll', updateScrollProgress);
+      updateScrollProgress();
+    });
+  </script>
+
+</body>
+
+</html>

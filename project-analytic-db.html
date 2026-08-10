@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project details of Product Sales Analyzer (PPP) by Muhamad Irvan Alfiyansah.">
+  <title>Product Sales Analyzer (PPP) | Irvan Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <header>
+    <nav class="nav-container">
+      <a href="index.html#projects" class="logo" aria-label="Irvan Portfolio Home">
+        <span>&lt;</span>Irvan<span>/&gt;</span>
+      </a>
+      <a href="index.html#projects" class="btn-back" style="margin-bottom: 0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" style="transform: rotate(180deg);">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+        Back to Home
+      </a>
+    </nav>
+  </header>
+
+  <main class="container max-w-5xl detail-container">
+    <a href="index.html#projects" class="btn-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" style="transform: rotate(180deg);">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+      </svg>
+      Back to Projects
+    </a>
+
+    <div class="project-detail-header">
+      <span class="status-badge" style="background-color: rgba(234, 179, 8, 0.1); border-color: rgba(234, 179, 8, 0.2); color: #facc15;">
+        Web Application
+      </span>
+      <h1 class="hero-title" style="margin-top: 0.75rem;">Product Sales Analyzer (PPP)</h1>
+      <div class="project-detail-meta">
+        <span>Role: <strong>Full-Stack Developer</strong></span>
+        <span>Year: <strong>2026</strong></span>
+      </div>
+    </div>
+
+    <!-- Interactive Image Gallery -->
+    <div class="gallery-container">
+      <div class="main-image-viewport" id="main-viewport">
+        <img src="asset/Analisis1.jpeg" alt="Product Sales Analyzer (PPP) Overview Dashboard" class="active" id="main-img">
+      </div>
+      <div class="gallery-thumbnails" id="gallery-thumbs">
+        <button class="thumb-btn active" data-src="asset/Analisis1.jpeg" aria-label="View Image 1">
+          <img src="asset/Analisis1.jpeg" alt="Overview Dashboard">
+        </button>
+        <button class="thumb-btn" data-src="asset/Analisis2.jpeg" aria-label="View Image 2">
+          <img src="asset/Analisis2.jpeg" alt="Analysis Analytics Charts">
+        </button>
+        <button class="thumb-btn" data-src="asset/Analisis3.jpeg" aria-label="View Image 3">
+          <img src="asset/Analisis3.jpeg" alt="Sales Orders Management">
+        </button>
+        <button class="thumb-btn" data-src="asset/Analisis4.jpeg" aria-label="View Image 4">
+          <img src="asset/Analisis4.jpeg" alt="Mass CSV Import Terminal">
+        </button>
+        <button class="thumb-btn" data-src="asset/Analisis5.jpeg" aria-label="View Image 5">
+          <img src="asset/Analisis5.jpeg" alt="Product Performance Analytics">
+        </button>
+      </div>
+    </div>
+
+    <div class="project-detail-grid">
+      <div class="detail-main-content">
+        <h2 class="detail-section-title">About Project</h2>
+        <p class="body-text">
+          Product Sales Analyzer (PPP) is an integrated full-stack sales analytics dashboard application designed to monitor sales performance, product analytics, transaction management, and secure bulk CSV data imports.
+        </p>
+        <p class="body-text">
+          The project is built using Clean Architecture on the backend to ensure scalability and long-term maintainability. For the frontend, the application adopts a premium minimalist monochromatic UI inspired by shadcn/ui ("Clinical Blueprint") with a custom Ember accent color.
+        </p>
+
+        <h3 class="detail-section-title" style="margin-top: 2rem;">Key Features</h3>
+        <ul class="detail-features-list">
+          <li>
+            <strong>Overview Dashboard:</strong> Key Performance Indicator (KPI) cards displaying total daily/monthly revenue, total order quantity, average order value, growth rate, as well as Recharts-based daily sales trends and product category proportions.
+          </li>
+          <li>
+            <strong>Product Analytics:</strong> Interactively displays the top 10 best-selling products by units sold, along with aggregated volume and revenue insights cards.
+          </li>
+          <li>
+            <strong>Sales Reports & Export:</strong> Detailed sales transaction tables with column sorting, dynamic date range and transaction status filters, and instant exports to Excel (.xlsx) or PDF (.pdf) documents.
+          </li>
+          <li>
+            <strong>Bulk CSV Import:</strong> Drag-and-drop interface to upload master product and sales order CSV files, featuring a backend parser and real-time, line-by-line error validation.
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="card spec-card">
+          <h3 style="font-size: 1.15rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+            Technologies & Tools
+          </h3>
+          <div class="skill-list" style="margin-bottom: 1.5rem;">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Recharts</span>
+            <span class="skill-tag">JWT & Bcrypt</span>
+            <span class="skill-tag">ExcelJS & PDFKit</span>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <a href="https://github.com/irvansalfiansyah/Penganalisis-Penjualan-Produk-PPP-" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; border-radius: 8px; padding: 0.6rem 1rem;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-text">&copy; 2026 Irvan. All rights reserved.</div>
+      <ul class="footer-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      /* --- Gallery Interactivity --- */
+      const mainImg = document.getElementById('main-img');
+      const thumbButtons = document.querySelectorAll('.thumb-btn');
+
+      thumbButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all buttons and set on clicked
+          thumbButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          // Change main image with smooth transition
+          const src = btn.getAttribute('data-src');
+          mainImg.style.opacity = '0';
+          setTimeout(() => {
+            mainImg.setAttribute('src', src);
+            mainImg.style.opacity = '1';
+          }, 200);
+        });
+      });
+
+      /* --- Scroll Progress Bar --- */
+      const scrollProgress = document.getElementById('scroll-progress');
+      const updateScrollProgress = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        scrollProgress.style.width = `${scrolled}%`;
+      };
+      window.addEventListener('scroll', updateScrollProgress);
+      updateScrollProgress();
+    });
+  </script>
+
+</body>
+
+</html>
