@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project details of Cafe-Scale Network Implementation using MikroTik RouterOS by Muhamad Irvan Alfiyansah.">
+  <title>MikroTik Cafe Network Implementation | Irvan Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <header>
+    <nav class="nav-container">
+      <a href="index.html#projects" class="logo" aria-label="Irvan Portfolio Home">
+        <span>&lt;</span>Irvan<span>/&gt;</span>
+      </a>
+      <a href="index.html#projects" class="btn-back" style="margin-bottom: 0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" style="transform: rotate(180deg);">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+        Back to Home
+      </a>
+    </nav>
+  </header>
+
+  <main class="container max-w-5xl detail-container">
+    <a href="index.html#projects" class="btn-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" style="transform: rotate(180deg);">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+      </svg>
+      Back to Projects
+    </a>
+
+    <div class="project-detail-header">
+      <span class="status-badge" style="background-color: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.2); color: #818cf8;">
+        Network Infrastructure
+      </span>
+      <h1 class="hero-title" style="margin-top: 0.75rem;">MikroTik Cafe Network Implementation</h1>
+      <div class="project-detail-meta">
+        <span>Role: <strong>Network Engineer</strong></span>
+        <span>Year: <strong>2026</strong></span>
+      </div>
+    </div>
+
+    <!-- Interactive Image Gallery -->
+    <div class="gallery-container">
+      <div class="main-image-viewport" id="main-viewport">
+        <img src="asset/jaringan1.png" alt="Cafe Network Topology Diagram" class="active" id="main-img">
+      </div>
+      <div class="gallery-thumbnails" id="gallery-thumbs">
+        <button class="thumb-btn active" data-src="asset/jaringan1.png" aria-label="View Image 1">
+          <img src="asset/jaringan1.png" alt="Network Topology">
+        </button>
+        <button class="thumb-btn" data-src="asset/jaringan2.png" aria-label="View Image 2">
+          <img src="asset/jaringan2.png" alt="WinBox Router Configuration interface">
+        </button>
+      </div>
+    </div>
+
+    <div class="project-detail-grid">
+      <div class="detail-main-content">
+        <h2 class="detail-section-title">About Project</h2>
+        <p class="body-text">
+          This project involved designing and implementing a structured, secure, and manageable network infrastructure for <em>Cafe Kopi Bandung</em>, a local coffee shop accommodating up to 40 active customers.
+        </p>
+        <p class="body-text">
+          Prior to this implementation, the cafe suffered from frequent network instability, IP address conflicts, and security vulnerabilities due to a flat consumer-grade router setup with no bandwidth management or client isolation. The new system utilizes a MikroTik RouterBOARD to control traffic routing, security filtering, and client access management.
+        </p>
+
+        <h3 class="detail-section-title" style="margin-top: 2rem;">Key Features</h3>
+        <ul class="detail-features-list">
+          <li>
+            <strong>Network Segmentation (VLAN/Subnets):</strong> Divided the physical network into isolated subnets to keep critical business systems (PC POS, CCTV storage) separated from client internet access.
+          </li>
+          <li>
+            <strong>MikroTik Hotspot Captive Portal:</strong> Implemented a customized captive login portal for guests, ensuring that customers must authenticate before accessing the internet.
+          </li>
+          <li>
+            <strong>DHCP & Static Leases:</strong> Automated dynamic IP configurations for guests alongside static lease bindings to ensure essential internal hardware (cash registers, security cameras) maintain persistent IPs.
+          </li>
+          <li>
+            <strong>Firewall NAT & Security Filtering:</strong> Configured NAT Masquerade for shared internet access, alongside inbound packet filtering to shield internal components from internet-borne threats.
+          </li>
+          <li>
+            <strong>Local DNS Caching & Mapping:</strong> Enabled DNS request caching on the router to accelerate browsing speeds and created static local DNS hostnames (e.g., <code>router.cafe</code>).
+          </li>
+        </ul>
+
+        <h3 class="detail-section-title" style="margin-top: 2rem;">Full Project Report</h3>
+        <p class="body-text">
+          A comprehensive 36-page report detailing the network analysis, topology planning, device specifications, configuration scripts, and testing results has been compiled. You can view it directly below or download it for offline reading.
+        </p>
+        <div style="width: 100%; height: 600px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-subtle); margin-top: 1rem; background-color: #121212;">
+          <iframe src="asset/Laporan_Implementasi_Mikrotik.pdf" width="100%" height="100%" style="border: none;">
+            This browser does not support inline PDFs. Please download the PDF to view it: <a href="asset/Laporan_Implementasi_Mikrotik.pdf" style="color: var(--accent-primary);">Download PDF Report</a>.
+          </iframe>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="card spec-card">
+          <h3 style="font-size: 1.15rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+            Technologies & Tools
+          </h3>
+          <div class="skill-list" style="margin-bottom: 1.5rem;">
+            <span class="skill-tag">MikroTik RouterOS</span>
+            <span class="skill-tag">WinBox 4.x</span>
+            <span class="skill-tag">Captive Portal</span>
+            <span class="skill-tag">Network Segmentation</span>
+            <span class="skill-tag">DHCP Server</span>
+            <span class="skill-tag">Firewall Filter & NAT</span>
+            <span class="skill-tag">DNS Caching</span>
+            <span class="skill-tag">Network Topology</span>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <a href="asset/Laporan_Implementasi_Mikrotik.pdf" download class="btn btn-primary" style="width: 100%; border-radius: 8px; padding: 0.6rem 1rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download PDF Report
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-text">&copy; 2026 Irvan. All rights reserved.</div>
+      <ul class="footer-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      /* --- Gallery Interactivity --- */
+      const mainImg = document.getElementById('main-img');
+      const thumbButtons = document.querySelectorAll('.thumb-btn');
+
+      thumbButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all buttons and set on clicked
+          thumbButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          // Change main image with smooth transition
+          const src = btn.getAttribute('data-src');
+          mainImg.style.opacity = '0';
+          setTimeout(() => {
+            mainImg.setAttribute('src', src);
+            mainImg.style.opacity = '1';
+          }, 200);
+        });
+      });
+
+      /* --- Scroll Progress Bar --- */
+      const scrollProgress = document.getElementById('scroll-progress');
+      const updateScrollProgress = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        scrollProgress.style.width = `${scrolled}%`;
+      };
+      window.addEventListener('scroll', updateScrollProgress);
+      updateScrollProgress();
+    });
+  </script>
+
+</body>
+
+</html>
